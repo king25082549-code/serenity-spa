@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SERENITY SPA - Business Website
+
+เว็บไซต์ธุรกิจบริการ สปา/นวด/อบรม สร้างด้วย Next.js + Tailwind CSS  
+ออกแบบเน้นปิดการขาย (High Conversion) พร้อม deploy บน Vercel
+
+## Tech Stack
+
+- **Next.js 16** (App Router)
+- **Tailwind CSS v4**
+- **Framer Motion** (animations)
+- **Neon DB** (PostgreSQL - contact form)
+- **Lucide React** (icons)
+- **TypeScript**
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔧 แก้ไขเนื้อหาเว็บ (สำหรับคนดูแลเว็บ)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ข้อมูลทั้งหมดอยู่ในโฟลเดอร์ `src/data/` — แก้ไขง่าย ไม่ต้องแก้โค้ดหน้าเว็บ:
 
-## Learn More
+| ไฟล์ | แก้อะไรได้ |
+|------|-----------|
+| `src/data/site-config.ts` | ชื่อธุรกิจ, เบอร์โทร, LINE, WhatsApp, ที่อยู่, เวลาทำการ, Social Media, Hero Slides, About Section |
+| `src/data/services.ts` | รายการบริการทั้งหมด (ชื่อ, ราคา, รายละเอียด, รูปภาพ, FAQ) |
+| `src/data/faq.ts` | คำถามที่พบบ่อย |
+| `src/data/blog.ts` | บทความ/Insights |
+| `src/data/portfolio.ts` | รูปภาพ Portfolio |
 
-To learn more about Next.js, take a look at the following resources:
+### ตัวอย่าง: เปลี่ยนเบอร์โทร
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```ts
+// src/data/site-config.ts
+contact: {
+  phone: "+971 50 999 8888",  // ← แก้ตรงนี้
+  ...
+}
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### ตัวอย่าง: เพิ่มบริการใหม่
 
-## Deploy on Vercel
+```ts
+// src/data/services.ts
+{
+  slug: "foot-massage",
+  title: "Foot Reflexology",
+  shortDescription: "...",
+  description: "...",
+  benefits: ["...", "..."],
+  duration: "60 min",
+  price: "From AED 200",
+  image: "https://your-image-url.com/foot.jpg",
+  category: "Massage",
+  faq: [{ question: "...", answer: "..." }],
+}
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### เปลี่ยนรูปภาพ
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+รูปภาพทั้งหมดใช้ URL — สามารถใช้:
+- **Cloudinary** (แนะนำ): อัปโหลดรูปแล้วนำ URL มาวาง
+- **Unsplash**: ใช้ URL จาก Unsplash โดยตรง
+- **URL รูปภาพอื่นๆ**: ต้องเพิ่ม hostname ใน `next.config.ts`
+
+## 🗄️ ตั้งค่า Neon Database (Contact Form)
+
+1. สมัครที่ [neon.tech](https://neon.tech)
+2. สร้าง Database ใหม่
+3. คัดลอก Connection String
+4. สร้างไฟล์ `.env.local`:
+
+```env
+DATABASE_URL=postgresql://user:pass@ep-xxx.us-east-2.aws.neon.tech/dbname?sslmode=require
+```
+
+> ถ้าไม่ตั้งค่า DATABASE_URL ระบบจะ log ข้อมูลไว้ใน console แทน
+
+## 🚀 Deploy บน Vercel
+
+1. Push โค้ดขึ้น GitHub
+2. ไปที่ [vercel.com](https://vercel.com) → Import Project
+3. เพิ่ม Environment Variable: `DATABASE_URL`
+4. Deploy!
+
+## โครงสร้างเว็บ
+
+```
+/                    → Home (Hero Slider, Features, Services, About, FAQ, Contact Form)
+/about               → About Us (Story, Highlights, Contact Form)
+/services            → Services List (จัดกลุ่มตาม Category)
+/services/[slug]     → Service Detail (รายละเอียด, Benefits, FAQ, CTA)
+/portfolio           → Portfolio Gallery (Filter by Category)
+/blog                → Insights/Blog (Sidebar, Categories)
+/blog/[slug]         → Blog Detail
+/contact             → Contact (Info, Form, Map)
+/api/contact         → API Route (POST - บันทึกลง Neon DB)
+```
+
+## โครงสร้างไฟล์
+
+```
+src/
+├── app/
+│   ├── layout.tsx          # Root Layout (Header/Footer/Floating)
+│   ├── page.tsx            # Home Page
+│   ├── about/page.tsx
+│   ├── services/page.tsx
+│   ├── services/[slug]/page.tsx
+│   ├── portfolio/page.tsx
+│   ├── blog/page.tsx
+│   ├── blog/[slug]/page.tsx
+│   ├── contact/page.tsx
+│   └── api/contact/route.ts
+├── components/
+│   ├── Header.tsx
+│   ├── Footer.tsx
+│   ├── Hero.tsx
+│   ├── HeroSlider.tsx
+│   ├── FloatingButtons.tsx
+│   ├── FAQ.tsx
+│   ├── ContactForm.tsx
+│   └── AnimatedSection.tsx
+└── data/                   # ← แก้ไขเนื้อหาที่นี่
+    ├── site-config.ts
+    ├── services.ts
+    ├── faq.ts
+    ├── blog.ts
+    └── portfolio.ts
+```
