@@ -4,42 +4,39 @@
 
 export const siteConfig = {
   // ชื่อธุรกิจ
-  businessName: "SERENITY SPA",
-  tagline: "Luxury Wellness & Spa Experience",
+  businessName: "ORCHID SPA",
+  tagline: "Massage & Wellness Centre",
 
   // SEO
   siteUrl: "https://your-domain.com",
-  siteTitle: "SERENITY SPA | Luxury Wellness & Spa Experience",
+  siteTitle: "ORCHID SPA | Massage & Wellness Centre in Abu Dhabi",
   siteDescription:
-    "Experience the ultimate relaxation with our premium spa and massage services. Professional therapists, luxurious ambiance, and personalized treatments.",
+    "Orchid Spa – Sauna, Thai Massage, Wellness Centre & Aromatherapy in Abu Dhabi. Spa, Jacuzzi, Moroccan Bath & More. Professional therapists, luxurious ambiance.",
 
   // ข้อมูลติดต่อ
   contact: {
-    phone: "+971 50 123 4567",
-    email: "info@serenityspa.com",
-    address: "Baniyas Tower, Abu Dhabi, UAE",
-    lineId: "@serenityspa",
-    lineUrl: "https://line.me/ti/p/@serenityspa",
-    whatsappNumber: "+971501234567",
-    whatsappUrl: "https://wa.me/971501234567",
+    phone: "+971 52 566 7288",
+    phone2: "+971 52 840 4787",
+    phone3: "+971 56 233 8962",
+    email: "orchidspa001@gmail.com",
+    address: "Baniyas Tower 117, P Floor, Muroor Road, Corner Khalifa Street, Abu Dhabi",
+    whatsappNumber: "+971562931298",
+    whatsappUrl: "https://wa.me/971562931298",
   },
 
   // เวลาทำการ
   openingHours: {
-    weekdays: "10:00 AM – 10:00 PM",
-    weekends: "9:00 AM – 11:00 PM",
+    everyday: "11:00 AM – 2:00 AM",
   },
 
   // Social Media Links
   social: {
-    facebook: "https://facebook.com/serenityspa",
-    instagram: "https://instagram.com/serenityspa",
-    tiktok: "https://tiktok.com/@serenityspa",
-    youtube: "https://youtube.com/@serenityspa",
+    facebook: "https://facebook.com/Orchid_spa2023",
+    instagram: "https://instagram.com/Orchid_spa2023",
   },
 
   // Google Map Embed
-  googleMapEmbed: `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.8432850170857!2d54.376027400000005!3d24.485843299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e66442f795b57%3A0x286dad847c8d2d8d!2sBaniyas%20Tower!5e1!3m2!1sth!2sth!4v1773807891254!5m2!1sth!2sth`,
+  googleMapEmbed: `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17900.43669950937!2d54.33726210964608!3d24.497876594266508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e67e17a9cac8d%3A0x8aa30a19382101f1!2sOrchid%20Spa%20-%20Sauna%2C%20Thai%20Massage%2C%20Wellness%20Centre%20%26%20Aromatherapy%20in%20Abu%20Dhabi%20%7C%20Spa%2C%20Jacuzzi%2C%20Moroccan%20Bath%20%26%20More!5e1!3m2!1sth!2sth!4v1773902716148!5m2!1sth!2sth`,
 
   // Hero Slides - เปลี่ยนภาพ slider ได้ที่นี่
   heroSlides: [
@@ -55,7 +52,7 @@ export const siteConfig = {
     },
     {
       image: "https://images.unsplash.com/photo-1540555700478-4be289fbec6e?w=1920&q=80",
-      headline: "Your Journey to Serenity",
+      headline: "Your Journey to Wellness",
       subheadline: "Escape the everyday stress in our tranquil sanctuary",
     },
   ],
@@ -81,18 +78,18 @@ export const siteConfig = {
 
   // About Section (Home)
   aboutPreview: {
-    title: "Welcome to Serenity Spa",
+    title: "Welcome to Orchid Spa",
     description:
-      "Nestled in the heart of Abu Dhabi, Serenity Spa is your sanctuary of peace and rejuvenation. With over 10 years of experience, our team of certified therapists combines ancient healing traditions with modern wellness techniques to deliver an unparalleled spa experience. Every treatment is tailored to your unique needs, ensuring you leave feeling refreshed, renewed, and revitalized.",
+      "Nestled in the heart of Abu Dhabi at Baniyas Tower, Orchid Spa is your sanctuary of peace and rejuvenation. Our team of certified therapists combines ancient healing traditions with modern wellness techniques to deliver an unparalleled spa experience. From Thai Massage to Moroccan Bath, Sauna, Jacuzzi, and Aromatherapy — every treatment is tailored to your unique needs.",
     image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?w=800&q=80",
   },
 
   // About Page - Full content
   about: {
     story:
-      "Founded in 2014, Serenity Spa was born from a passion to bring world-class wellness experiences to Abu Dhabi. Our founder, inspired by traditional healing practices from Thailand, Bali, and Japan, envisioned a space where modern luxury meets ancient wisdom. Today, we are proud to be one of the most trusted spa destinations in the UAE, serving thousands of satisfied clients each year.",
+      "Orchid Spa was born from a passion to bring world-class wellness experiences to Abu Dhabi. Inspired by traditional healing practices from Thailand, Bali, and Japan, we envisioned a space where modern luxury meets ancient wisdom. Today, we are proud to be one of the most trusted spa and massage destinations in Abu Dhabi, serving thousands of satisfied clients each year.",
     mission:
-      "Our mission is to provide exceptional wellness experiences that nurture the body, calm the mind, and uplift the spirit. We believe true beauty comes from within, and our treatments are designed to help you find your inner balance.",
+      "Our mission is to provide exceptional wellness experiences that nurture the body, calm the mind, and uplift the spirit. At Orchid Spa, we believe true beauty comes from within, and our treatments are designed to help you find your inner balance.",
     highlights: [
       {
         title: "Professional Team",

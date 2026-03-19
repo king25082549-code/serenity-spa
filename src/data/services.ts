@@ -9,7 +9,6 @@ export interface Service {
   description: string;
   benefits: string[];
   duration: string;
-  price: string;
   image: string;
   category: string;
   faq: { question: string; answer: string }[];
@@ -31,7 +30,6 @@ export const services: Service[] = [
       "Promotes better sleep quality",
     ],
     duration: "60 / 90 min",
-    price: "From AED 350",
     image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80",
     category: "Massage",
     faq: [
@@ -64,7 +62,6 @@ export const services: Service[] = [
       "Boosts energy levels naturally",
     ],
     duration: "90 / 120 min",
-    price: "From AED 400",
     image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800&q=80",
     category: "Massage",
     faq: [
@@ -93,7 +90,6 @@ export const services: Service[] = [
       "Boosts immune system function",
     ],
     duration: "60 / 90 min",
-    price: "From AED 380",
     image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=800&q=80",
     category: "Massage",
     faq: [
@@ -122,7 +118,6 @@ export const services: Service[] = [
       "Enhanced detoxification",
     ],
     duration: "75 / 90 min",
-    price: "From AED 450",
     image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?w=800&q=80",
     category: "Therapy",
     faq: [
@@ -151,7 +146,6 @@ export const services: Service[] = [
       "Radiant, glowing complexion",
     ],
     duration: "60 / 90 min",
-    price: "From AED 500",
     image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80",
     category: "Skincare",
     faq: [
@@ -180,7 +174,6 @@ export const services: Service[] = [
       "Promotes relaxation and well-being",
     ],
     duration: "45 / 60 min",
-    price: "From AED 300",
     image: "https://images.unsplash.com/photo-1540555700478-4be289fbec6e?w=800&q=80",
     category: "Skincare",
     faq: [

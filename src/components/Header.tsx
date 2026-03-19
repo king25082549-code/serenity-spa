@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
 import { siteConfig } from "@/data/site-config";
+import Logo from "@/components/Logo";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -24,9 +25,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl font-bold tracking-wider text-primary-dark">
-              {siteConfig.businessName}
-            </span>
+            <Logo size={36} />
           </Link>
 
           {/* Desktop Nav */}
@@ -52,7 +51,7 @@ export default function Header() {
               {siteConfig.contact.phone}
             </a>
             <a
-              href={siteConfig.contact.lineUrl}
+              href={siteConfig.contact.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary text-white px-6 py-2.5 text-sm font-medium tracking-wide hover:bg-primary-dark transition-colors duration-300 rounded-sm"
@@ -102,7 +101,7 @@ export default function Header() {
                   {siteConfig.contact.phone}
                 </a>
                 <a
-                  href={siteConfig.contact.lineUrl}
+                  href={siteConfig.contact.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary text-white px-6 py-3 text-sm font-medium tracking-wide text-center hover:bg-primary-dark transition-colors rounded-sm"

@@ -71,12 +71,12 @@ export default function Hero({
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <a
-              href={siteConfig.contact.lineUrl}
+              href={siteConfig.contact.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary hover:bg-primary-dark text-white px-8 py-4 text-sm font-medium tracking-widest uppercase transition-colors duration-300"
             >
-              Chat LINE / WhatsApp
+              Chat on WhatsApp
             </a>
             <Link
               href="/services"

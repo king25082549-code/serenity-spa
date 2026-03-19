@@ -46,7 +46,7 @@ export default function ServicesPage() {
                           />
                           <div className="absolute inset-0 bg-dark/20 group-hover:bg-dark/40 transition-colors duration-300" />
                           <div className="absolute bottom-4 left-4 bg-primary text-white text-xs font-medium px-3 py-1.5 tracking-wider uppercase">
-                            {service.price}
+                            {service.category}
                           </div>
                         </div>
                         <div className="p-6">

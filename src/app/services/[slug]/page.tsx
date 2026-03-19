@@ -86,13 +86,6 @@ export default async function ServiceDetailPage({ params }: Props) {
                         <p className="font-medium text-foreground">{service.duration}</p>
                       </div>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <span className="text-primary font-bold text-lg">$</span>
-                      <div>
-                        <p className="text-xs text-foreground/50 uppercase tracking-wider">Price</p>
-                        <p className="font-medium text-foreground">{service.price}</p>
-                      </div>
-                    </div>
                   </div>
 
                   <div className="space-y-3">
@@ -103,14 +96,6 @@ export default async function ServiceDetailPage({ params }: Props) {
                       className="block w-full bg-primary hover:bg-primary-dark text-white px-6 py-4 text-sm font-medium tracking-widest uppercase text-center transition-colors"
                     >
                       Book via WhatsApp
-                    </a>
-                    <a
-                      href={siteConfig.contact.lineUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block w-full bg-[#06C755] hover:bg-[#05a647] text-white px-6 py-4 text-sm font-medium tracking-widest uppercase text-center transition-colors"
-                    >
-                      Book via LINE
                     </a>
                     <a
                       href={`tel:${siteConfig.contact.phone}`}
@@ -160,7 +145,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                         <h3 className="font-bold text-primary-dark group-hover:text-primary transition-colors">
                           {s.title}
                         </h3>
-                        <p className="text-sm text-foreground/50 mt-1">{s.price}</p>
+                        <p className="text-sm text-foreground/50 mt-1">{s.duration}</p>
                       </div>
                     </div>
                   </Link>

@@ -81,10 +81,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-bold text-foreground mb-1">Opening Hours</h3>
                       <p className="text-sm text-foreground/60">
-                        Mon–Fri: {siteConfig.openingHours.weekdays}
-                      </p>
-                      <p className="text-sm text-foreground/60">
-                        Sat–Sun: {siteConfig.openingHours.weekends}
+                        Everyday: {siteConfig.openingHours.everyday}
                       </p>
                     </div>
                   </div>
@@ -100,14 +97,6 @@ export default function ContactPage() {
                   >
                     <MessageCircle size={18} />
                     WhatsApp
-                  </a>
-                  <a
-                    href={siteConfig.contact.lineUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 bg-[#06C755] hover:bg-[#05a647] text-white px-6 py-3.5 text-sm font-medium tracking-wider uppercase transition-colors"
-                  >
-                    LINE
                   </a>
                   <a
                     href={`tel:${siteConfig.contact.phone}`}

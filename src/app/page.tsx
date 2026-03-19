@@ -26,7 +26,7 @@ export default function Home() {
           <AnimatedSection>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold tracking-wider uppercase text-primary-dark mb-4">
-                The Serenity Experience
+                The Orchid Spa Experience
               </h2>
               <p className="text-foreground/60 max-w-xl mx-auto">
                 Three pillars of wellness that define every treatment we offer
@@ -87,10 +87,7 @@ export default function Home() {
                     <p className="text-sm text-foreground/60 mb-4 leading-relaxed line-clamp-2">
                       {service.shortDescription}
                     </p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm font-semibold text-primary">
-                        {service.price}
-                      </span>
+                    <div className="flex items-center justify-end">
                       <Link
                         href={`/services/${service.slug}`}
                         className="bg-primary hover:bg-primary-dark text-white px-5 py-2 text-xs font-medium tracking-wider uppercase transition-colors duration-300"
