@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <Logo size={36} textColor="text-white" className="mb-4" />
+            <Logo size={170} color="#FFFFFF" className="mb-4" />
             <p className="text-white/60 text-sm leading-relaxed mb-6">
               {siteConfig.tagline}. Your sanctuary of peace and rejuvenation in
               the heart of Abu Dhabi.

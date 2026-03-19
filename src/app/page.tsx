@@ -2,6 +2,7 @@ import HeroSlider from "@/components/HeroSlider";
 import AnimatedSection from "@/components/AnimatedSection";
 import FAQ from "@/components/FAQ";
 import ContactForm from "@/components/ContactForm";
+import Logo from "@/components/Logo";
 import Link from "next/link";
 import { Leaf, Droplets, Sparkles } from "lucide-react";
 import { siteConfig } from "@/data/site-config";
@@ -19,6 +20,36 @@ export default function Home() {
     <>
       {/* Hero Slider */}
       <HeroSlider />
+
+      {/* Brand Showcase */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <AnimatedSection>
+              <div className="bg-cream rounded-sm p-8 md:p-12 shadow-sm flex items-center justify-center min-h-[320px]">
+                <Logo size={320} className="max-w-full" />
+              </div>
+            </AnimatedSection>
+            <AnimatedSection delay={0.15}>
+              <div>
+                <p className="text-xs font-medium tracking-widest uppercase text-primary mb-4">
+                  Orchid Spa
+                </p>
+                <h2 className="text-3xl md:text-4xl font-bold tracking-wider uppercase text-primary-dark mb-6">
+                  A Beautiful New Look For Your Wellness Experience
+                </h2>
+                <p className="text-foreground/60 leading-relaxed mb-6">
+                  Enjoy a refined Orchid Spa experience with elegant branding, calming visuals, and a warm welcome from the moment you arrive on the website.
+                </p>
+                <div
+                  className="h-64 rounded-sm bg-cover bg-center shadow-sm"
+                  style={{ backgroundImage: `url(${siteConfig.aboutPreview.image})` }}
+                />
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
 
       {/* Features Section */}
       <section className="py-20 px-4 bg-cream">
