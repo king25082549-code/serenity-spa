@@ -27,7 +27,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
               <div className="bg-cream rounded-sm p-8 md:p-12 shadow-sm flex items-center justify-center min-h-[320px]">
-                <Logo size={320} className="max-w-full" />
+                <Logo variant="full" />
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>

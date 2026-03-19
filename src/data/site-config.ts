@@ -41,17 +41,17 @@ export const siteConfig = {
   // Hero Slides - เปลี่ยนภาพ slider ได้ที่นี่
   heroSlides: [
     {
-      image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1920&q=80",
+      image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1920&q=80",
       headline: "Discover True Relaxation",
       subheadline: "Premium spa treatments designed to rejuvenate your body and mind",
     },
     {
-      image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1920&q=80",
+      image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1920&q=80",
       headline: "Luxury Wellness Experience",
       subheadline: "Professional therapists with years of experience in holistic healing",
     },
     {
-      image: "https://images.unsplash.com/photo-1540555700478-4be289fbec6e?w=1920&q=80",
+      image: "https://images.unsplash.com/photo-1540555700478-4be289fbec6e?auto=format&fit=crop&w=1920&q=80",
       headline: "Your Journey to Wellness",
       subheadline: "Escape the everyday stress in our tranquil sanctuary",
     },

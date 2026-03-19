@@ -1,67 +1,146 @@
 interface LogoProps {
   className?: string;
-  size?: number;
-  showText?: boolean;
   color?: string;
+  variant?: "header" | "footer" | "full";
 }
 
 export default function Logo({
   className = "",
-  size = 160,
-  showText = true,
-  color = "#4E79E6",
+  color = "#5B8DEF",
+  variant = "header",
 }: LogoProps) {
-  const iconWidth = size;
-  const iconHeight = showText ? size * 0.42 : size * 0.24;
+  if (variant === "full") {
+    return (
+      <div className={className}>
+        <svg
+          width="280"
+          height="160"
+          viewBox="0 0 520 300"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="Orchid Spa Massage"
+          className="block"
+        >
+          {/* Two leaves */}
+          <g fill={color}>
+            <path d="M260 165C255 120 230 80 185 55C165 44 140 38 110 40C90 42 72 48 58 58C53 62 52 69 57 73C72 85 82 102 93 119C106 140 122 157 145 166C168 175 195 174 220 166C235 160 248 153 260 145V165Z" />
+            <path d="M260 165C265 120 290 80 335 55C355 44 380 38 410 40C430 42 448 48 462 58C467 62 468 69 463 73C448 85 438 102 427 119C414 140 398 157 375 166C352 175 325 174 300 166C285 160 272 153 260 145V165Z" />
+            <path d="M253 100C252 85 248 72 243 60C238 72 236 85 235 100C236 115 237 130 240 145L244 145C243 130 243 115 244 100C244 85 245 72 247 60C249 72 250 85 250 100L253 100Z" />
+            <path d="M267 100C268 85 272 72 277 60C282 72 284 85 285 100C284 115 283 130 280 145L276 145C277 130 277 115 276 100C276 85 275 72 273 60C271 72 270 85 270 100L267 100Z" />
+          </g>
+          {/* ORCHID SPA text */}
+          <text
+            x="260"
+            y="225"
+            textAnchor="middle"
+            fontFamily="'Segoe UI', Arial, Helvetica, sans-serif"
+            fontSize="52"
+            fontWeight="700"
+            letterSpacing="10"
+            fill={color}
+          >
+            ORCHID SPA
+          </text>
+          {/* MASSAGE text */}
+          <text
+            x="260"
+            y="258"
+            textAnchor="middle"
+            fontFamily="'Segoe UI', Arial, Helvetica, sans-serif"
+            fontSize="22"
+            fontWeight="400"
+            letterSpacing="14"
+            fill={color}
+            opacity="0.7"
+          >
+            MASSAGE
+          </text>
+        </svg>
+      </div>
+    );
+  }
 
+  if (variant === "footer") {
+    return (
+      <div className={className}>
+        <svg
+          width="180"
+          height="100"
+          viewBox="0 0 520 300"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="Orchid Spa Massage"
+          className="block"
+        >
+          <g fill={color}>
+            <path d="M260 165C255 120 230 80 185 55C165 44 140 38 110 40C90 42 72 48 58 58C53 62 52 69 57 73C72 85 82 102 93 119C106 140 122 157 145 166C168 175 195 174 220 166C235 160 248 153 260 145V165Z" />
+            <path d="M260 165C265 120 290 80 335 55C355 44 380 38 410 40C430 42 448 48 462 58C467 62 468 69 463 73C448 85 438 102 427 119C414 140 398 157 375 166C352 175 325 174 300 166C285 160 272 153 260 145V165Z" />
+            <path d="M253 100C252 85 248 72 243 60C238 72 236 85 235 100C236 115 237 130 240 145L244 145C243 130 243 115 244 100C244 85 245 72 247 60C249 72 250 85 250 100L253 100Z" />
+            <path d="M267 100C268 85 272 72 277 60C282 72 284 85 285 100C284 115 283 130 280 145L276 145C277 130 277 115 276 100C276 85 275 72 273 60C271 72 270 85 270 100L267 100Z" />
+          </g>
+          <text
+            x="260"
+            y="225"
+            textAnchor="middle"
+            fontFamily="'Segoe UI', Arial, Helvetica, sans-serif"
+            fontSize="52"
+            fontWeight="700"
+            letterSpacing="10"
+            fill={color}
+          >
+            ORCHID SPA
+          </text>
+          <text
+            x="260"
+            y="258"
+            textAnchor="middle"
+            fontFamily="'Segoe UI', Arial, Helvetica, sans-serif"
+            fontSize="22"
+            fontWeight="400"
+            letterSpacing="14"
+            fill={color}
+            opacity="0.7"
+          >
+            MASSAGE
+          </text>
+        </svg>
+      </div>
+    );
+  }
+
+  // Header variant: icon + text side by side, compact
   return (
-    <div className={className}>
+    <div className={`flex items-center gap-2.5 ${className}`}>
       <svg
-        width={iconWidth}
-        height={iconHeight}
-        viewBox={showText ? "0 0 520 210" : "0 0 520 120"}
+        width="32"
+        height="32"
+        viewBox="40 30 440 150"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
-        aria-label="Orchid Spa Massage"
-        className="block"
+        aria-label="Orchid Spa"
+        className="block shrink-0"
       >
         <g fill={color}>
-          <path d="M101 62C135 47 173 46 205 56C231 64 249 82 259 110C252 109 246 107 240 104C223 96 208 85 194 73C178 61 158 53 133 51C122 50 112 50 101 52C97 53 95 58 98 61L101 62Z" />
-          <path d="M259 112C251 82 233 61 208 49C180 35 145 31 109 35C84 38 62 46 45 59C41 62 40 68 44 72C53 80 60 91 67 103C75 117 83 131 95 141C116 159 146 162 177 154C200 148 221 136 242 124C248 121 254 117 259 112Z" />
-          <path d="M419 62C385 47 347 46 315 56C289 64 271 82 261 110C268 109 274 107 280 104C297 96 312 85 326 73C342 61 362 53 387 51C398 50 408 50 419 52C423 53 425 58 422 61L419 62Z" />
-          <path d="M261 112C269 82 287 61 312 49C340 35 375 31 411 35C436 38 458 46 475 59C479 62 480 68 476 72C467 80 460 91 453 103C445 117 437 131 425 141C404 159 374 162 343 154C320 148 299 136 278 124C272 121 266 117 261 112Z" />
-          <path d="M252 166C251 130 249 103 246 82C242 103 240 130 239 166H244C244 145 245 124 246 103C247 124 248 145 248 166H252Z" />
-          <path d="M260 166C261 130 263 103 266 82C270 103 272 130 273 166H268C268 145 267 124 266 103C265 124 264 145 264 166H260Z" />
+          <path d="M260 165C255 120 230 80 185 55C165 44 140 38 110 40C90 42 72 48 58 58C53 62 52 69 57 73C72 85 82 102 93 119C106 140 122 157 145 166C168 175 195 174 220 166C235 160 248 153 260 145V165Z" />
+          <path d="M260 165C265 120 290 80 335 55C355 44 380 38 410 40C430 42 448 48 462 58C467 62 468 69 463 73C448 85 438 102 427 119C414 140 398 157 375 166C352 175 325 174 300 166C285 160 272 153 260 145V165Z" />
+          <path d="M253 100C252 85 248 72 243 60C238 72 236 85 235 100C236 115 237 130 240 145L244 145C243 130 243 115 244 100C244 85 245 72 247 60C249 72 250 85 250 100L253 100Z" />
+          <path d="M267 100C268 85 272 72 277 60C282 72 284 85 285 100C284 115 283 130 280 145L276 145C277 130 277 115 276 100C276 85 275 72 273 60C271 72 270 85 270 100L267 100Z" />
         </g>
-        {showText && (
-          <>
-            <text
-              x="260"
-              y="188"
-              textAnchor="middle"
-              fontFamily="Arial, Helvetica, sans-serif"
-              fontSize="42"
-              fontWeight="700"
-              letterSpacing="7"
-              fill={color}
-            >
-              ORCHID SPA
-            </text>
-            <text
-              x="260"
-              y="206"
-              textAnchor="middle"
-              fontFamily="Arial, Helvetica, sans-serif"
-              fontSize="18"
-              fontWeight="400"
-              letterSpacing="11"
-              fill={color}
-            >
-              MASSAGE
-            </text>
-          </>
-        )}
       </svg>
+      <div className="flex flex-col leading-none">
+        <span
+          className="text-lg font-bold tracking-[0.15em]"
+          style={{ color }}
+        >
+          ORCHID SPA
+        </span>
+        <span
+          className="text-[8px] tracking-[0.3em] uppercase opacity-60"
+          style={{ color }}
+        >
+          MASSAGE
+        </span>
+      </div>
     </div>
   );
 }

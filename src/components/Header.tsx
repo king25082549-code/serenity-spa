@@ -25,7 +25,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <Logo size={36} />
+            <Logo variant="header" />
           </Link>
 
           {/* Desktop Nav */}
