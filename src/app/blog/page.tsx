@@ -22,7 +22,7 @@ export default function BlogPage() {
       <Hero
         title="Insights"
         subtitle="Wellness tips, guides, and expert advice from our team"
-        image="https://images.unsplash.com/photo-1540555700478-4be289fbec6e?w=1920&q=80"
+        image="https://images.unsplash.com/photo-1540555700478-4be289fbec6e?auto=format&fit=crop&w=1920&q=80"
         height="medium"
       />
 

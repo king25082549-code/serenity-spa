@@ -19,7 +19,7 @@ export default function ServicesPage() {
       <Hero
         title="Our Services"
         subtitle="Premium wellness treatments tailored to your needs"
-        image="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1920&q=80"
+        image="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1920&q=80"
         height="medium"
       />
 

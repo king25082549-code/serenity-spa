@@ -16,7 +16,7 @@ export default function ContactPage() {
       <Hero
         title="Contact Us"
         subtitle="We would love to hear from you. Reach out to book or ask any questions."
-        image="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=1920&q=80"
+        image="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1920&q=80"
         height="medium"
       />
 

@@ -19,7 +19,7 @@ export default function PortfolioPage() {
       <Hero
         title="Portfolio"
         subtitle="A glimpse into our world of wellness and luxury"
-        image="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1920&q=80"
+        image="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1920&q=80"
         height="medium"
       />
 

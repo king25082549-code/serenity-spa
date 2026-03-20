@@ -9,32 +9,32 @@ import Logo from "@/components/Logo";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/portfolio", label: "Portfolio" },
+  { href: "/about", label: "About Us" },
+  { href: "/services", label: "Our Services" },
+  { href: "/portfolio", label: "Gallery" },
   { href: "/blog", label: "Insights" },
-  { href: "/contact", label: "Contact" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-warm-white/90 backdrop-blur-md border-b border-secondary/30">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center shrink-0">
             <Logo variant="header" />
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium tracking-wide text-foreground/70 hover:text-primary transition-colors duration-300 uppercase"
+                className="text-[13px] font-medium tracking-wide text-white/80 hover:text-white transition-colors duration-300 uppercase"
               >
                 {link.label}
               </Link>
@@ -45,25 +45,25 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-4">
             <a
               href={`tel:${siteConfig.contact.phone}`}
-              className="flex items-center gap-2 text-sm text-primary-dark font-medium"
+              className="flex items-center gap-2 text-sm text-white/70 hover:text-white font-medium transition-colors"
             >
-              <Phone size={16} />
+              <Phone size={14} />
               {siteConfig.contact.phone}
             </a>
             <a
               href={siteConfig.contact.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-primary text-white px-6 py-2.5 text-sm font-medium tracking-wide hover:bg-primary-dark transition-colors duration-300 rounded-sm"
+              className="bg-[#5B8DEF] text-white px-5 py-2.5 text-xs font-semibold tracking-wider hover:bg-[#4A7DE0] transition-colors duration-300 rounded uppercase"
             >
-              BOOK NOW
+              Book via WhatsApp
             </a>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 text-foreground"
+            className="lg:hidden p-2 text-white"
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -79,7 +79,7 @@ export default function Header() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-warm-white border-t border-secondary/30"
+            className="lg:hidden bg-dark border-t border-white/10"
           >
             <nav className="flex flex-col px-4 py-6 gap-4">
               {navLinks.map((link) => (
@@ -87,15 +87,15 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-base font-medium tracking-wide text-foreground/70 hover:text-primary transition-colors uppercase py-2"
+                  className="text-base font-medium tracking-wide text-white/70 hover:text-white transition-colors uppercase py-2"
                 >
                   {link.label}
                 </Link>
               ))}
-              <div className="border-t border-secondary/30 pt-4 mt-2 flex flex-col gap-3">
+              <div className="border-t border-white/10 pt-4 mt-2 flex flex-col gap-3">
                 <a
                   href={`tel:${siteConfig.contact.phone}`}
-                  className="flex items-center gap-2 text-primary-dark font-medium"
+                  className="flex items-center gap-2 text-white/70 font-medium"
                 >
                   <Phone size={16} />
                   {siteConfig.contact.phone}
@@ -104,9 +104,9 @@ export default function Header() {
                   href={siteConfig.contact.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-primary text-white px-6 py-3 text-sm font-medium tracking-wide text-center hover:bg-primary-dark transition-colors rounded-sm"
+                  className="bg-[#5B8DEF] text-white px-6 py-3 text-sm font-semibold tracking-wider text-center hover:bg-[#4A7DE0] transition-colors rounded uppercase"
                 >
-                  BOOK NOW
+                  Book via WhatsApp
                 </a>
               </div>
             </nav>

@@ -1,20 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 960" fill="none">
-  <!-- Left leaf (main body) -->
-  <path d="M390 520C370 440 320 370 250 320C210 295 165 280 115 278C80 278 50 285 30 298C22 304 20 315 28 322C55 345 70 378 88 412C110 455 138 490 175 515C215 540 265 548 310 535C340 525 365 510 390 490V520Z" fill="#5B8DEF"/>
-  <!-- Left leaf (vein/highlight) -->
-  <path d="M390 520C385 445 365 385 330 340C300 300 260 270 210 255C175 245 140 242 100 248" fill="none" stroke="white" stroke-width="12" stroke-linecap="round"/>
-  
-  <!-- Right leaf (main body) -->
-  <path d="M570 520C590 440 640 370 710 320C750 295 795 280 845 278C880 278 910 285 930 298C938 304 940 315 932 322C905 345 890 378 872 412C850 455 822 490 785 515C745 540 695 548 650 535C620 525 595 510 570 490V520Z" fill="#5B8DEF"/>
-  <!-- Right leaf (vein/highlight) -->
-  <path d="M570 520C575 445 595 385 630 340C660 300 700 270 750 255C785 245 820 242 860 248" fill="none" stroke="white" stroke-width="12" stroke-linecap="round"/>
-  
-  <!-- Center stems -->
-  <path d="M470 640C472 580 476 530 480 490C484 530 488 580 490 640" fill="none" stroke="#5B8DEF" stroke-width="6"/>
-  
-  <!-- ORCHID SPA text -->
-  <text x="480" y="720" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="82" font-weight="600" letter-spacing="12" fill="#5B8DEF">ORCHID SPA</text>
-  
-  <!-- MASSAGE text -->
-  <text x="480" y="770" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="400" letter-spacing="18" fill="#5B8DEF" opacity="0.75">MASSAGE</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" fill="none">
+  <!-- Left leaf -->
+  <path d="M200 265C190 220 162 180 128 155C108 142 84 133 58 132C40 133 26 138 16 146C12 150 11 157 16 160C30 170 38 186 47 203C58 225 72 243 92 255C113 267 138 270 160 264C175 258 188 250 200 240V265Z" fill="#5B8DEF"/>
+  <path d="M200 260C196 218 184 185 166 158C150 135 128 118 102 108C82 100 62 98 42 102" fill="none" stroke="white" stroke-width="7" stroke-linecap="round"/>
+  <!-- Right leaf -->
+  <path d="M280 265C290 220 318 180 352 155C372 142 396 133 422 132C440 133 454 138 464 146C468 150 469 157 464 160C450 170 442 186 433 203C422 225 408 243 388 255C367 267 342 270 320 264C305 258 292 250 280 240V265Z" fill="#5B8DEF"/>
+  <path d="M280 260C284 218 296 185 314 158C330 135 352 118 378 108C398 100 418 98 438 102" fill="none" stroke="white" stroke-width="7" stroke-linecap="round"/>
+  <!-- Stems -->
+  <path d="M235 320C236 295 238 275 240 258C242 275 244 295 245 320" fill="none" stroke="#5B8DEF" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- ORCHID SPA -->
+  <text x="240" y="365" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="500" letter-spacing="8" fill="#5B8DEF">ORCHID SPA</text>
+  <!-- MASSAGE -->
+  <text x="240" y="392" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="400" letter-spacing="10" fill="#5B8DEF" opacity="0.7">MASSAGE</text>
 </svg>
