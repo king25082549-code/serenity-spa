@@ -30,7 +30,7 @@ export const services: Service[] = [
       "Promotes better sleep quality",
     ],
     duration: "60 / 90 min",
-    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80",
     category: "Massage",
     faq: [
       {
@@ -62,7 +62,7 @@ export const services: Service[] = [
       "Boosts energy levels naturally",
     ],
     duration: "90 / 120 min",
-    image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80",
     category: "Massage",
     faq: [
       {
@@ -90,7 +90,7 @@ export const services: Service[] = [
       "Boosts immune system function",
     ],
     duration: "60 / 90 min",
-    image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=800&q=80",
     category: "Massage",
     faq: [
       {
@@ -100,34 +100,6 @@ export const services: Service[] = [
       {
         question: "Can I choose my own oils?",
         answer: "Absolutely! Our therapist will guide you through our oil selection to find the perfect blend for you.",
-      },
-    ],
-  },
-  {
-    slug: "hot-stone-therapy",
-    title: "Hot Stone Therapy",
-    shortDescription:
-      "Heated basalt stones placed on key points to melt away tension and promote deep healing.",
-    description:
-      "Hot Stone Therapy uses smooth, heated volcanic basalt stones as an extension of the therapist's hands. The warmth of the stones penetrates deep into your muscles, melting away tension and stress. Stones are placed on specific points along the body's meridians to balance energy flow. This ancient technique, combined with traditional massage strokes, creates an incredibly soothing and therapeutic experience.",
-    benefits: [
-      "Deep muscle relaxation",
-      "Improved blood flow and circulation",
-      "Pain relief for chronic conditions",
-      "Reduced stress and mental tension",
-      "Enhanced detoxification",
-    ],
-    duration: "75 / 90 min",
-    image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?w=800&q=80",
-    category: "Therapy",
-    faq: [
-      {
-        question: "Are the stones too hot?",
-        answer: "The stones are heated to a comfortable temperature (130-145°F). Please tell your therapist if you need adjustment.",
-      },
-      {
-        question: "Is Hot Stone Therapy safe for everyone?",
-        answer: "It's safe for most people. However, it's not recommended for pregnant women or those with certain medical conditions. Please consult us.",
       },
     ],
   },
@@ -146,7 +118,7 @@ export const services: Service[] = [
       "Radiant, glowing complexion",
     ],
     duration: "60 / 90 min",
-    image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80",
     category: "Skincare",
     faq: [
       {
@@ -160,30 +132,34 @@ export const services: Service[] = [
     ],
   },
   {
-    slug: "body-scrub",
-    title: "Herbal Body Scrub",
+    slug: "moroccan-bath",
+    title: "Moroccan Bath and Scrub",
     shortDescription:
-      "An invigorating full-body exfoliation using natural herbs and minerals for silky smooth skin.",
+      "A traditional Moroccan hammam experience featuring steam, black soap cleansing, and full-body exfoliation.",
     description:
-      "Our Herbal Body Scrub is a revitalizing treatment that removes dead skin cells and impurities, revealing fresh, smooth, and glowing skin underneath. Using a blend of natural sea salts, organic herbs, and nourishing oils, this treatment not only exfoliates but also deeply moisturizes your skin. The invigorating scrub is followed by a warm rinse and a hydrating body butter application.",
+      "Experience the time-honored Moroccan Bath (Hammam) tradition — a luxurious ritual that deeply cleanses and rejuvenates your entire body. The session begins with a relaxing steam bath to open your pores, followed by an application of authentic Moroccan black soap (Beldi). After the soap has softened your skin, our therapist performs a vigorous full-body scrub using a traditional Kessa glove, removing dead skin cells and impurities. The treatment concludes with a soothing rinse and moisturizing application, leaving your skin incredibly soft, smooth, and radiant.",
     benefits: [
+      "Deep pore cleansing and detoxification",
       "Removes dead skin cells and impurities",
-      "Stimulates cell renewal",
-      "Improves skin texture and softness",
-      "Enhances product absorption",
-      "Promotes relaxation and well-being",
+      "Improves blood circulation",
+      "Softens and hydrates the skin",
+      "Promotes deep relaxation and stress relief",
     ],
-    duration: "45 / 60 min",
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbec6e?w=800&q=80",
-    category: "Skincare",
+    duration: "60 / 90 min",
+    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80",
+    category: "Bath & Scrub",
     faq: [
       {
-        question: "Is the scrub suitable for sensitive skin?",
-        answer: "We have gentle formulations available for sensitive skin. Please inform us of any skin conditions.",
+        question: "What is included in the Moroccan Bath?",
+        answer: "The full experience includes steam bath, black soap application, full-body Kessa glove scrub, rinse, and moisturizing. Everything is provided.",
       },
       {
-        question: "Should I shave before a body scrub?",
-        answer: "We recommend avoiding shaving for at least 24 hours before treatment to prevent irritation.",
+        question: "Is the Moroccan Bath suitable for sensitive skin?",
+        answer: "Yes, we adjust the scrub intensity based on your skin type. Please inform us of any skin conditions beforehand.",
+      },
+      {
+        question: "How long does the full session take?",
+        answer: "The 60-minute session covers the essential hammam experience. The 90-minute session includes additional relaxation time and a hydrating body mask.",
       },
     ],
   },

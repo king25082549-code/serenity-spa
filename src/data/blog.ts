@@ -40,9 +40,9 @@ Thai Massage is particularly effective for lower back pain. The combination of s
 The meditative aspect of Thai Massage, combined with rhythmic pressing and stretching, creates a deeply calming effect on the mind. This can help reduce anxiety and improve mental clarity.
 
 Book your Thai Massage session today and experience these incredible benefits for yourself!`,
-    image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80",
     category: "Wellness",
-    author: "Serenity Team",
+    author: "Orchid Spa Team",
     date: "2025-12-15",
     readTime: "5 min read",
   },
@@ -73,10 +73,10 @@ Essential oils are concentrated plant extracts that retain the natural smell and
 3. **Bath**: Adding a few drops to warm bath water
 4. **Inhalation**: Direct inhalation from the bottle or steam
 
-Visit Serenity Spa to experience our custom aromatherapy treatments!`,
-    image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=800&q=80",
+Visit Orchid Spa to experience our custom aromatherapy treatments!`,
+    image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=800&q=80",
     category: "Education",
-    author: "Serenity Team",
+    author: "Orchid Spa Team",
     date: "2025-11-20",
     readTime: "7 min read",
   },
@@ -111,44 +111,48 @@ Treat yourself to a professional spa treatment at least once a month. Regular ma
 
 Set boundaries with technology. Designate screen-free times, especially before bed. This simple change can dramatically improve your sleep quality.
 
-At Serenity Spa, we believe that self-care is a journey, not a destination. Let us be part of your wellness routine.`,
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbec6e?w=800&q=80",
+At Orchid Spa, we believe that self-care is a journey, not a destination. Let us be part of your wellness routine.`,
+    image: "https://images.unsplash.com/photo-1540555700478-4be289fbec6e?auto=format&fit=crop&w=800&q=80",
     category: "Lifestyle",
-    author: "Serenity Team",
+    author: "Orchid Spa Team",
     date: "2026-01-05",
     readTime: "6 min read",
   },
   {
-    slug: "hot-stone-therapy-explained",
-    title: "Hot Stone Therapy: Everything You Need to Know",
+    slug: "moroccan-bath-guide",
+    title: "Moroccan Bath (Hammam): The Ultimate Guide to This Ancient Ritual",
     excerpt:
-      "What is hot stone therapy? How does it work? Is it right for you? Get all your questions answered.",
-    content: `Hot Stone Therapy is one of the most popular spa treatments worldwide, and for good reason. This ancient practice uses heated volcanic basalt stones to deliver deep, penetrating warmth to your muscles.
+      "Discover the centuries-old tradition of the Moroccan Hammam — a luxurious bathing ritual that cleanses, detoxifies, and rejuvenates your skin.",
+    content: `The Moroccan Bath, known as Hammam, is one of the oldest and most cherished bathing traditions in the world. Originating in North Africa, this ritual has been practiced for centuries as a way to cleanse the body, purify the skin, and promote deep relaxation.
 
-**How It Works:**
+**What is a Moroccan Bath?**
 
-Smooth, flat basalt stones are heated to between 130-145°F (54-63°C). The therapist places stones on specific points along the body — typically along the spine, on the stomach, chest, face, palms, and feet. The heat from the stones warms and relaxes the muscles, allowing the therapist to apply deeper pressure without discomfort.
+A Hammam is a full-body cleansing ritual that combines steam, traditional black soap (Savon Beldi), and vigorous exfoliation with a Kessa glove. It's designed to deeply cleanse the skin, remove dead cells, and leave you feeling completely renewed.
+
+**The Hammam Process:**
+
+1. **Steam Room**: The session begins in a warm steam room to open pores and soften the skin
+2. **Black Soap Application**: Authentic Moroccan black soap made from olive oil is applied to the entire body
+3. **Kessa Glove Scrub**: After the soap has set, a vigorous scrub with a traditional Kessa glove removes dead skin
+4. **Rinse and Clay Mask**: A soothing rinse followed by an optional Rhassoul clay mask
+5. **Moisturizing**: The session ends with a hydrating argan oil or body butter application
 
 **Benefits:**
 
-- Deep muscle relaxation without intense pressure
-- Improved circulation and blood flow
-- Pain relief for chronic conditions
-- Stress and anxiety reduction
-- Better sleep quality
+- Deep pore cleansing and detoxification
+- Improved blood circulation
+- Softer, smoother, and more radiant skin
+- Stress relief and deep relaxation
+- Improved skin texture and tone
 
-**What to Expect:**
+**Who Is It For?**
 
-A typical hot stone session lasts 75-90 minutes. You'll lie on a massage table while the therapist alternates between placing heated stones and performing massage strokes. The warmth is deeply soothing and most clients find themselves in a state of deep relaxation within minutes.
+The Moroccan Bath is suitable for most skin types. The scrub intensity can be adjusted for sensitive skin. It's a wonderful treatment for anyone looking to deeply cleanse and rejuvenate their skin.
 
-**Is It Right for You?**
-
-Hot Stone Therapy is suitable for most people, but may not be recommended if you have diabetes, high blood pressure, heart disease, or are pregnant. Always consult with our team before booking.
-
-Experience the healing power of Hot Stone Therapy at Serenity Spa.`,
-    image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?w=800&q=80",
+Experience the authentic Moroccan Bath at Orchid Spa — your skin will thank you!`,
+    image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?auto=format&fit=crop&w=800&q=80",
     category: "Wellness",
-    author: "Serenity Team",
+    author: "Orchid Spa Team",
     date: "2025-10-10",
     readTime: "5 min read",
   },

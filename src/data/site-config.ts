@@ -81,7 +81,7 @@ export const siteConfig = {
     title: "Welcome to Orchid Spa",
     description:
       "Nestled in the heart of Abu Dhabi at Baniyas Tower, Orchid Spa is your sanctuary of peace and rejuvenation. Our team of certified therapists combines ancient healing traditions with modern wellness techniques to deliver an unparalleled spa experience. From Thai Massage to Moroccan Bath, Sauna, Jacuzzi, and Aromatherapy — every treatment is tailored to your unique needs.",
-    image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?auto=format&fit=crop&w=800&q=80",
   },
 
   // About Page - Full content
@@ -110,6 +110,6 @@ export const siteConfig = {
         icon: "home",
       },
     ],
-    image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=800&q=80",
   },
 };

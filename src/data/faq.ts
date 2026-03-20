@@ -11,12 +11,12 @@ export const generalFAQ: FAQItem[] = [
   {
     question: "What are your opening hours?",
     answer:
-      "We are open Monday to Friday from 10:00 AM to 10:00 PM, and weekends from 9:00 AM to 11:00 PM. We recommend booking in advance to secure your preferred time slot.",
+      "We are open everyday from 11:00 AM to 2:00 AM. We recommend booking in advance to secure your preferred time slot.",
   },
   {
     question: "Do I need to make an appointment?",
     answer:
-      "While walk-ins are welcome subject to availability, we highly recommend booking an appointment to ensure you get your preferred time and therapist. You can book through LINE, WhatsApp, or our contact form.",
+      "While walk-ins are welcome subject to availability, we highly recommend booking an appointment to ensure you get your preferred time and therapist. You can book through WhatsApp or our contact form.",
   },
   {
     question: "What should I bring to my appointment?",
