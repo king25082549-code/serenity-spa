@@ -16,10 +16,10 @@ export default function Logo({
         <img
           src={logoSrc}
           alt="Orchid Spa Massage"
-          width={200}
-          height={72}
+          width={260}
+          height={90}
           className="block object-contain"
-          style={{ width: 200, height: 72 }}
+          style={{ width: 260, height: 90 }}
         />
       </div>
     );
@@ -32,10 +32,10 @@ export default function Logo({
         <img
           src={logoSrc}
           alt="Orchid Spa Massage"
-          width={190}
-          height={120}
+          width={240}
+          height={160}
           className="block object-contain"
-          style={{ width: 190, height: 120 }}
+          style={{ width: 240, height: 160 }}
         />
       </div>
     );
