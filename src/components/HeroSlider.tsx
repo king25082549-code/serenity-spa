@@ -24,7 +24,7 @@ export default function HeroSlider() {
   }, [next]);
 
   return (
-    <section className="relative min-h-screen overflow-hidden -mt-20">
+    <section className="relative min-h-screen overflow-hidden -mt-24">
       <AnimatePresence mode="wait">
         <motion.div
           key={current}

@@ -16,10 +16,10 @@ export default function Logo({
         <img
           src={logoSrc}
           alt="Orchid Spa Massage"
-          width={168}
-          height={58}
+          width={200}
+          height={72}
           className="block object-contain"
-          style={{ width: 168, height: 58 }}
+          style={{ width: 200, height: 72 }}
         />
       </div>
     );
