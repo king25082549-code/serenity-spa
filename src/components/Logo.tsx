@@ -3,30 +3,24 @@ interface LogoProps {
   variant?: "header" | "footer" | "full";
 }
 
+ const logoSrc = "/images/1205307631-Green Leaf Minimalist Organic Shop Logo 副本 副本_20231218_205305_0000 (2).svg";
+
 export default function Logo({
   className = "",
   variant = "header",
 }: LogoProps) {
   if (variant === "header") {
     return (
-      <div className={`flex items-center gap-3 ${className}`}>
+      <div className={className}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/orchid-spa-logo.svg"
+          src={logoSrc}
           alt="Orchid Spa Massage"
-          width={52}
-          height={52}
+          width={168}
+          height={58}
           className="block object-contain"
-          style={{ width: 52, height: 52 }}
+          style={{ width: 168, height: 58 }}
         />
-        <div className="flex flex-col leading-tight">
-          <span className="text-white text-sm font-bold tracking-[0.2em] uppercase">
-            ORCHID SPA
-          </span>
-          <span className="text-white/50 text-[9px] tracking-[0.35em] uppercase">
-            MASSAGE
-          </span>
-        </div>
       </div>
     );
   }
@@ -36,12 +30,12 @@ export default function Logo({
       <div className={className}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/orchid-spa-logo-white.svg"
+          src={logoSrc}
           alt="Orchid Spa Massage"
-          width={150}
-          height={150}
+          width={190}
+          height={120}
           className="block object-contain"
-          style={{ width: 150, height: 150 }}
+          style={{ width: 190, height: 120 }}
         />
       </div>
     );
@@ -52,12 +46,12 @@ export default function Logo({
     <div className={className}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/images/orchid-spa-logo.svg"
+        src={logoSrc}
         alt="Orchid Spa Massage"
-        width={280}
-        height={280}
+        width={320}
+        height={220}
         className="block object-contain"
-        style={{ width: 280, height: 280 }}
+        style={{ width: 320, height: 220 }}
       />
     </div>
   );
