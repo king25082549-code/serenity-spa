@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import AnimatedSection from "@/components/AnimatedSection";
 import ContactForm from "@/components/ContactForm";
+import Image from "next/image";
 import { Users, Award, Home } from "lucide-react";
 import { siteConfig } from "@/data/site-config";
 import type { Metadata } from "next";
@@ -90,10 +91,15 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
-              <div
-                className="h-80 lg:h-[500px] bg-cover bg-center rounded-sm"
-                style={{ backgroundImage: `url(${siteConfig.about.image})` }}
-              />
+              <div className="relative h-80 lg:h-[500px] rounded-sm overflow-hidden">
+                <Image
+                  src={siteConfig.about.image}
+                  alt="Our Commitment"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <div>

@@ -2,6 +2,7 @@ import HeroSlider from "@/components/HeroSlider";
 import AnimatedSection from "@/components/AnimatedSection";
 import FAQ from "@/components/FAQ";
 import ContactForm from "@/components/ContactForm";
+import Image from "next/image";
 import Link from "next/link";
 import { Leaf, Droplets, Sparkles } from "lucide-react";
 import { siteConfig } from "@/data/site-config";
@@ -71,9 +72,12 @@ export default function Home() {
               <AnimatedSection key={service.slug} delay={i * 0.1}>
                 <div className="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
                   <div className="relative h-56 overflow-hidden">
-                    <div
-                      className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url(${service.image})` }}
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-700"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                     <div className="absolute inset-0 bg-dark/20 group-hover:bg-dark/40 transition-colors duration-300" />
                     <div className="absolute top-4 right-4 bg-primary text-white text-xs font-medium px-3 py-1.5 tracking-wider uppercase">
@@ -108,12 +112,15 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
-              <div
-                className="h-80 lg:h-[500px] bg-cover bg-center rounded-sm"
-                style={{
-                  backgroundImage: `url(${siteConfig.aboutPreview.image})`,
-                }}
-              />
+              <div className="relative h-80 lg:h-[500px] rounded-sm overflow-hidden">
+                <Image
+                  src={siteConfig.aboutPreview.image}
+                  alt="About Orchid Spa"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <div>

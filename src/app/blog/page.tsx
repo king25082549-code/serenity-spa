@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Hero from "@/components/Hero";
 import AnimatedSection from "@/components/AnimatedSection";
+import Image from "next/image";
 import Link from "next/link";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { blogPosts, blogCategories } from "@/data/blog";
@@ -58,9 +59,12 @@ export default function BlogPage() {
                       <article className="bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-0">
                           <div className="relative h-48 sm:h-full overflow-hidden">
-                            <div
-                              className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
-                              style={{ backgroundImage: `url(${post.image})` }}
+                            <Image
+                              src={post.image}
+                              alt={post.title}
+                              fill
+                              className="object-cover group-hover:scale-110 transition-transform duration-700"
+                              sizes="(max-width: 640px) 100vw, 33vw"
                             />
                           </div>
                           <div className="sm:col-span-2 p-6">
@@ -114,10 +118,15 @@ export default function BlogPage() {
                         href={`/blog/${post.slug}`}
                         className="flex gap-3 group"
                       >
-                        <div
-                          className="w-16 h-16 shrink-0 bg-cover bg-center rounded-sm"
-                          style={{ backgroundImage: `url(${post.image})` }}
-                        />
+                        <div className="relative w-16 h-16 shrink-0 rounded-sm overflow-hidden">
+                          <Image
+                            src={post.image}
+                            alt={post.title}
+                            fill
+                            className="object-cover"
+                            sizes="64px"
+                          />
+                        </div>
                         <div>
                           <h4 className="text-sm font-medium text-foreground group-hover:text-primary transition-colors line-clamp-2">
                             {post.title}

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Hero from "@/components/Hero";
 import AnimatedSection from "@/components/AnimatedSection";
+import Image from "next/image";
 import Link from "next/link";
 import { Calendar, Clock, ArrowLeft, User } from "lucide-react";
 import { blogPosts, getBlogBySlug } from "@/data/blog";
@@ -140,9 +141,12 @@ export default async function BlogDetailPage({ params }: Props) {
                   <Link href={`/blog/${p.slug}`} className="group block">
                     <div className="bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
                       <div className="relative h-48 overflow-hidden">
-                        <div
-                          className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
-                          style={{ backgroundImage: `url(${p.image})` }}
+                        <Image
+                          src={p.image}
+                          alt={p.title}
+                          fill
+                          className="object-cover group-hover:scale-110 transition-transform duration-700"
+                          sizes="(max-width: 768px) 100vw, 33vw"
                         />
                       </div>
                       <div className="p-5">

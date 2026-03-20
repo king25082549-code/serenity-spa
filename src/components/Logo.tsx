@@ -3,7 +3,7 @@ interface LogoProps {
   variant?: "header" | "footer" | "full";
 }
 
- const logoSrc = "/images/1205307631-Green Leaf Minimalist Organic Shop Logo 副本 副本_20231218_205305_0000 (2).svg";
+ const logoSrc = "/images/1205307631-Green Leaf Minimalist  Organic Shop Logo 副本 副本_20231218_205305_0000 (2)-Photoroom-แปลง-จาก-png.svg";
 
 export default function Logo({
   className = "",

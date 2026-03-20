@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import AnimatedSection from "@/components/AnimatedSection";
+import Image from "next/image";
 import Link from "next/link";
 import { Clock, ArrowRight } from "lucide-react";
 import { services, getCategories } from "@/data/services";
@@ -40,9 +41,12 @@ export default function ServicesPage() {
                     <Link href={`/services/${service.slug}`} className="group block">
                       <div className="bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
                         <div className="relative h-56 overflow-hidden">
-                          <div
-                            className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
-                            style={{ backgroundImage: `url(${service.image})` }}
+                          <Image
+                            src={service.image}
+                            alt={service.title}
+                            fill
+                            className="object-cover group-hover:scale-110 transition-transform duration-700"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                           />
                           <div className="absolute inset-0 bg-dark/20 group-hover:bg-dark/40 transition-colors duration-300" />
                           <div className="absolute bottom-4 left-4 bg-primary text-white text-xs font-medium px-3 py-1.5 tracking-wider uppercase">

@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Hero from "@/components/Hero";
 import AnimatedSection from "@/components/AnimatedSection";
 import FAQ from "@/components/FAQ";
+import Image from "next/image";
 import Link from "next/link";
 import { Clock, CheckCircle } from "lucide-react";
 import { services, getServiceBySlug } from "@/data/services";
@@ -135,9 +136,12 @@ export default async function ServiceDetailPage({ params }: Props) {
                   <Link href={`/services/${s.slug}`} className="group block">
                     <div className="bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
                       <div className="relative h-48 overflow-hidden">
-                        <div
-                          className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
-                          style={{ backgroundImage: `url(${s.image})` }}
+                        <Image
+                          src={s.image}
+                          alt={s.title}
+                          fill
+                          className="object-cover group-hover:scale-110 transition-transform duration-700"
+                          sizes="(max-width: 768px) 100vw, 33vw"
                         />
                         <div className="absolute inset-0 bg-dark/20 group-hover:bg-dark/40 transition-colors" />
                       </div>

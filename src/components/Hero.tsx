@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/data/site-config";
 
@@ -26,18 +27,20 @@ export default function Hero({
       ? "min-h-[60vh]"
       : "min-h-[40vh]";
 
+  const imgSrc = image || "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1920&q=80";
+
   return (
     <section
       className={`relative ${heightClass} flex items-center justify-center overflow-hidden`}
     >
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: image
-            ? `url(${image})`
-            : `url(https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1920&q=80)`,
-        }}
+      <Image
+        src={imgSrc}
+        alt={title}
+        fill
+        className="object-cover"
+        priority
+        sizes="100vw"
       />
       <div className="absolute inset-0 bg-dark/60" />
 

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { siteConfig } from "@/data/site-config";
@@ -34,9 +35,13 @@ export default function HeroSlider() {
           transition={{ duration: 1 }}
           className="absolute inset-0"
         >
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${slides[current].image})` }}
+          <Image
+            src={slides[current].image}
+            alt={slides[current].headline}
+            fill
+            className="object-cover"
+            priority={current === 0}
+            sizes="100vw"
           />
           <div className="absolute inset-0 bg-dark/50" />
         </motion.div>

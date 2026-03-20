@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Hero from "@/components/Hero";
 import AnimatedSection from "@/components/AnimatedSection";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { portfolioItems, portfolioCategories } from "@/data/portfolio";
 
@@ -60,9 +61,12 @@ export default function PortfolioPage() {
                   transition={{ duration: 0.4 }}
                   className="group relative aspect-square overflow-hidden rounded-sm cursor-pointer"
                 >
-                  <div
-                    className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
-                    style={{ backgroundImage: `url(${item.image})` }}
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                   <div className="absolute inset-0 bg-dark/0 group-hover:bg-dark/50 transition-colors duration-300 flex items-end">
                     <div className="p-4 w-full translate-y-full group-hover:translate-y-0 transition-transform duration-300">
